@@ -1,0 +1,129 @@
+:root{
+    --main:#0a192f;
+    --green:#64ffda;
+    --bright-gray:#ccd6f6;
+    --gray:#8892b0;
+}
+
+.contactSection{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.leftContactSection{
+    z-index:200;
+    color: var(--main);
+    background-color:;
+    box-sizing: border-box;
+    padding:10% 4%;
+    flex:30%;
+    /* width: 30vw; */
+    height: 100vh;
+}
+.leftContactSection h2{
+    letter-spacing: 0.04em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6em;
+    font-weight: 900;
+    margin-bottom: -4%;
+}
+.leftContactSection-para{
+    font-weight: 700;
+    margin-top:10%;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+  .leftContactSection a{
+    padding-right: 15%;
+    color: var(--main);
+    font-size: 20px;
+    display: inline;
+  }
+  .leftContactSection a:hover{
+    color: white;
+  }
+  .leftContactSection i{
+    transition: transform 0.2s;
+  }
+  .leftContactSection i:hover{
+    transform: translateY(-5px);
+  }
+.rightContactSection{
+    display: flex;
+    flex-direction: column;
+    color: var(--green);
+    box-sizing: border-box;
+    padding:10% 13%;
+    height: 100vh;
+    flex:70%;
+    width: 70vw;
+    background-color: var(--main);
+}
+.form-input{
+  border: none;
+  background-color: #ccd6f627;
+  margin: 10px;
+  margin-bottom: 30px;
+  display: block;
+  padding:20px 20px;
+  padding-right: 200px;
+  outline: none;
+}
+.form-input:hover{
+  border-bottom: 1px solid var(--green);
+}
+.contactButtonStyle{
+  font-family: 'Roboto Mono', monospace;
+    background-color: #0a192f;
+    color: var(--green);
+    margin-left: 15px;
+    padding: 0.5rem 2.5rem;
+    border: 2px solid var(--green);
+    border-radius: 4px;
+    display: inline-block;
+    animation: slidedown 1.2s ease-in 0.4s 1 normal forwards ;
+  }
+
+  .contactButtonStyle:hover{
+    background-color:  #ccd6f627;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+  .greet{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+    padding-bottom: 2em;
+  }
+
+  @media only screen and (max-width:1000px){
+    .contactSection{
+      flex-direction: column;
+    }
+    .leftContactSection,.rightContactSection{
+      flex:100;
+      width: 100vw;
+    }
+    .leftContactSection h2{
+      letter-spacing: 0.04em;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2.2em;
+      font-weight: 900;
+      margin-bottom: -4%;
+  }
+  .greet{
+    font-size: 2em;
+    padding-top:0.1em;
+  }
+  .leftContactSection-para{
+      font-weight: 600;
+      margin-top:1%;
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.3em;
+  }
+  }
