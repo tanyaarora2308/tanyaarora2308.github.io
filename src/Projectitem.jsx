@@ -1,10 +1,10 @@
 import React from "react";
 import "./Style.css";
+import Button from "./Button";
 
-
-const Projectitem = ({ title, imageSrc, desc }) => {
+const Projectitem = (props) => {
+  console.log(props);
   return (
-
     <div className="project-container">
       <div class="card">
         <div class="front front1">
@@ -12,7 +12,7 @@ const Projectitem = ({ title, imageSrc, desc }) => {
             <div
               class="project-main"
               style={{
-                backgroundImage: "url(" + imageSrc + ")",
+                backgroundImage: "url(" + props.imageSrc + ")",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
               }}
@@ -21,12 +21,20 @@ const Projectitem = ({ title, imageSrc, desc }) => {
         </div>
         <div class="front front2">
           <div class="content">
-            <h3>
-              <a href="/" target="_blank">
-                {title}
-              </a>
-            </h3>
-            <p>{desc}</p>
+            <h3>{props.title}</h3>
+            <p>{props.desc}</p>
+            <a
+            href={props.Link}
+            target="_blank"
+            style={{
+              fontSize: "11px",
+              fontFamily: "'Roboto Mono', monospace",
+              color: " var(--green)",
+              textDecoration: "none",
+            }}
+          >
+            <div className="Button-project">View Code</div>
+          </a>
           </div>
         </div>
       </div>

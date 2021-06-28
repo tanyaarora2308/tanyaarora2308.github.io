@@ -8,7 +8,7 @@ const ContactSection = () => {
 <>
     <Navbar2/>
     <div className="contactSection">
-      <div className="leftContactSection">
+      {/* <div className="leftContactSection">
         <h2>QUESTIONS?</h2>
         <h2>COMMENTS?</h2>
         <p className="greet">
@@ -38,7 +38,7 @@ const ContactSection = () => {
         <a href="#" target="_blank">
           <i class="fab fa-twitter"></i>
         </a>
-      </div>
+      </div>  */}
       <div className="rightContactSection">
         <form>
           <label style={{ margin: "10px" }}>NAME</label>
@@ -64,7 +64,7 @@ const ContactSection = () => {
       </div>
     </div>
     </>
-  );
+  )
 };
 
 export default ContactSection;

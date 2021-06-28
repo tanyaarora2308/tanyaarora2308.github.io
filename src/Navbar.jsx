@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { MdClose, MdMenu } from "react-icons/md";
 import { FaTenge } from "react-icons/fa";
@@ -96,6 +95,7 @@ const NavStyles = styled.nav`
       
     }	
     .mobile-menu-icon {
+      z-index:100;
       font-size:250%;
       margin:6% -3%;	
       color:var(--green);
@@ -104,7 +104,7 @@ const NavStyles = styled.nav`
     .navItems {
       --top:35%;
       transition: 0.3s ease transform;
-      background-color: #ccd6f627;
+      background-color: #112240;
       width: 50%;
       max-width: 196px;
       border-radius: 12px;

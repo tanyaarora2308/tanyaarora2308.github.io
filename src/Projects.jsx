@@ -8,7 +8,6 @@ import Projectitem from './Projectitem';
 import "swiper/swiper-bundle.min.css";
 import { Fade} from "react-awesome-reveal";
 
-
 SwiperCore.use([Navigation]);
 
 const ProjectStyle=styled.div`
@@ -60,7 +59,7 @@ border-radius:8px;
         width:100%;
     }
     .swiper-button-next{
-        right: 0.5rem;
+        right: 8.5rem;
         height:40px;
         width:40px;
     }
@@ -79,7 +78,7 @@ const Projects = () => {
             <div className="project" >
                 <Fade duration="7000">
                 <div className="projectContainer" style={{paddingTop:'1.5rem',marginRight:"80px"}}>
-                    <h2 class="about-me" style={{marginBottom:"-3rem"}}><span style={{color: "var(--green)"}}>03.</span><span style={{paddingRight:"5%"}}>Projects</span>  </h2>
+                    <h2 class="about-me" style={{marginBottom:"-3rem"}}><span style={{color: "var(--green)"}}>04.</span><span style={{paddingRight:"5%"}}>Projects</span>  </h2>
                     <div className="project-items">
                         <Swiper spaceBetween={30} slidesPerView={1} navigation
                         breakpoints={{
@@ -98,9 +97,11 @@ const Projects = () => {
                             return(
                                     <SwiperSlide>
                                         <Projectitem 
+                                        id={project.id}
                                         title={project.Pname}
                                         imageSrc={project.img}
                                         desc={project.desc}
+                                        Link={project.Link}
                                         />
                                     </SwiperSlide>
                             )

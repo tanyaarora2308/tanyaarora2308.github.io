@@ -3,18 +3,19 @@
     --green:#64ffda;
     --bright-gray:#ccd6f6;
     --gray:#8892b0;
+    --bright-gray:#c3cbe9;
 }
 
 .contactSection{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 10%;
     width: 100%;
     margin: 0px;
-    padding: 0px;
     overflow-x: hidden; 
 }
-.leftContactSection{
+/* .leftContactSection{
     z-index:200;
     color: var(--main);
     background-color:;
@@ -22,9 +23,9 @@
     padding:10% 4%;
     flex:30%;
     /* width: 30vw; */
-    height: 100vh;
-}
-.leftContactSection h2{
+    /* height: 100vh;
+} */
+/* .leftContactSection h2{
     letter-spacing: 0.04em;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.6em;
@@ -52,16 +53,13 @@
   }
   .leftContactSection i:hover{
     transform: translateY(-5px);
-  }
+  } */ */
 .rightContactSection{
     display: flex;
     flex-direction: column;
     color: var(--green);
     box-sizing: border-box;
     padding:10% 13%;
-    height: 100vh;
-    flex:70%;
-    width: 70vw;
     background-color: var(--main);
 }
 .form-input{
@@ -99,31 +97,56 @@
     font-size: 1.5em;
     padding-bottom: 2em;
   }
-
+  .footer-icons{
+    display:none;
+    text-align: center;
+    color: #8892b0;
+    animation: fade-in 1.5s ease 1.8s 1 normal forwards ;
+  }
+  .footer-icons a{
+    color: #8892b0;
+    padding: 1.5%;
+    font-size: 20px;
+    display: inline;
+  }
+  .footer-icons a:hover{
+    color: var(--green);
+  }
+  .footer-icons i{
+    transition: transform 0.2s;
+  }
+  .footer-icons i:hover{
+    transform: translateY(-5px);
+  }
   @media only screen and (max-width:1000px){
     .contactSection{
       flex-direction: column;
     }
     .leftContactSection,.rightContactSection{
       flex:100;
-      width: 100vw;
     }
-    .leftContactSection h2{
+    .rightContactSection{
+      padding-top:10%;
+    }
+    /* .leftContactSection h2{
       letter-spacing: 0.04em;
       font-family: 'Ubuntu', sans-serif;
       font-size: 2.2em;
       font-weight: 900;
       margin-bottom: -4%;
-  }
+  } */
   .greet{
     font-size: 2em;
     padding-top:0.1em;
   }
-  .leftContactSection-para{
+  /* .leftContactSection-para{
       font-weight: 600;
       margin-top:1%;
       display: block;
       font-family: 'Open Sans', sans-serif;
       font-size: 1.3em;
+  } */
+  .footer-icons{
+    display: block;
   }
   }

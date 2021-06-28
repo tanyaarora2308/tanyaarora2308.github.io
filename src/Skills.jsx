@@ -1,7 +1,7 @@
 import React from "react";
 import SkillsSection from "./SkillsSection";
 import styled from "styled-components";
-import { Fade,Bounce, Flip, Hinge, JackInTheBox, Roll, Rotate, Slide,Zoom } from "react-awesome-reveal";
+import { Fade} from "react-awesome-reveal";
 import "./Style.css";
 
 const Skillss = styled.div`
@@ -62,7 +62,7 @@ function Skills() {
                     style={{ paddingTop: "1.5rem", marginRight: "80px" }}
                 >
                     <h2 class="about-me" style={{ marginBottom: "2rem" }}>
-                        <span style={{ color: "var(--green)" }}>02.</span>
+                        <span style={{ color: "var(--green)" }}>03.</span>
                         <span style={{ paddingRight: "5%" }}>My Skills</span>{" "}
                     </h2>
                     <div className="skillsContainer">
