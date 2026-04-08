@@ -1,7 +1,7 @@
-import LightsOut from './Images/lightsoutB.png';
-import restaurantB from './Images/restaurantB.png';
-import Hangman from './Images/HangmanB.png';
-import Coachify from './Images/coachify.png';
+import LightsOut from '../../Images/lightsoutB.png';
+import restaurantB from '../../Images/restaurantB.png';
+import Hangman from '../../Images/HangmanB.png';
+import Coachify from '../../Images/coachify.png';
 
 const Projectdata=[
     {

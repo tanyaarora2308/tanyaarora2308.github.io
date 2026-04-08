@@ -1,8 +1,8 @@
 import React from 'react'
 import { Fade } from "react-awesome-reveal";
-import "./Style.css";
-import jpmcLogo from './Images/jpmc.jpg';
-import barclaysLogo from './Images/barclays.jpg';
+import "../../styles/Style.css";
+import jpmcLogo from '../../Images/jpmc.jpg';
+import barclaysLogo from '../../Images/barclays.jpg';
 
 const Work = () => {
     return (

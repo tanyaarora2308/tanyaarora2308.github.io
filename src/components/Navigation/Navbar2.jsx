@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 import { FaTenge } from "react-icons/fa";
-import "./Style.css";
-import Button from "./Button";
+import "../../styles/Style.css";
+import Button from "../Button/Button";
 
 const NavStyles = styled.nav`
   position: fixed;

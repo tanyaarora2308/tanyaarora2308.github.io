@@ -1,6 +1,6 @@
 import React from "react";
-import "./Style.css";
-import Button from "./Button";
+import "../../styles/Style.css";
+import Button from "../../components/Button/Button";
 
 const Projectitem = (props) => {
   console.log(props);

@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { MdClose, MdMenu } from "react-icons/md";
 import { FaTenge } from "react-icons/fa";
-import "./Style.css";
+import "../../styles/Style.css";
 import { Link } from "react-scroll";
-import Button from "./Button";
+import Button from "../Button/Button";
 import {Fade} from "react-awesome-reveal";
 
 const NavStyles = styled.nav`

@@ -1,7 +1,7 @@
 import React from "react";
-import "./Style2.css";
+import "../../styles/Style2.css";
 import { Link } from "react-router-dom";
-import Navbar2 from "./Navbar2";
+import Navbar2 from "../../components/Navigation/Navbar2";
 
 const ContactSection = () => {
   return (

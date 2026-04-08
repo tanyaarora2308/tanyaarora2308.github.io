@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter,Route, Switch } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from './components/Navigation/Navbar';
 import HomeSection from "./HomeSection";
-import ContactSection from './ContactSection';
-import About from './About';
-import Projects from './Projects';
+import ContactSection from './sections/Connect/ContactSection';
+import About from './sections/About/About';
+import Projects from './sections/Projects/Projects';
 
 
 

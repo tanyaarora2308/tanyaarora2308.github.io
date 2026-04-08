@@ -2,7 +2,7 @@ import React from "react";
 import SkillsSection from "./SkillsSection";
 import styled from "styled-components";
 import { Fade} from "react-awesome-reveal";
-import "./Style.css";
+import "../../styles/Style.css";
 
 const Skillss = styled.div`
   .SkillsSection {

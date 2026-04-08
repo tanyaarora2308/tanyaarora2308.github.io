@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from './Button'
-import "./Style.css";
+import Button from '../../components/Button/Button'
+import "../../styles/Style.css";
 import {Zoom } from "react-awesome-reveal";
 
 

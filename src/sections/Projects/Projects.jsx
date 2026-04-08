@@ -3,7 +3,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore,{ Navigation} from 'swiper';
 import Projectdata from "./Projectdata"
 import styled from 'styled-components';
-import "./Style.css"
+import "../../styles/Style.css"
 import Projectitem from './Projectitem';
 import "swiper/swiper-bundle.min.css";
 import { Fade} from "react-awesome-reveal";

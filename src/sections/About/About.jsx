@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fade } from "react-awesome-reveal";
-import aboutmeColored from './Images/tanya-profile.jpg';
+import aboutmeColored from '../../Images/tanya-profile.jpg';
 
 const About = () => {
     return (
