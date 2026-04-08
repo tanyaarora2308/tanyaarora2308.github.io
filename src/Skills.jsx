@@ -12,7 +12,7 @@ const Skillss = styled.div`
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4rem;
     row-gap: 1rem;
-    margin: 4rem 0rem;
+    margin: 2rem 0rem;
     @media screen and (max-width: 1100px) {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -66,14 +66,18 @@ function Skills() {
                         <span style={{ paddingRight: "5%" }}>My Skills</span>{" "}
                     </h2>
                     <div className="skillsContainer">
-                        <SkillsSection skill={"HTML"} progress={"90%"} width={"90%"} />
-                        <SkillsSection skill={"CSS"} progress={"90%"} width={"90%"} />
-                        <SkillsSection skill={"Javascript"} progress={"70%"} width={"70%"} />
-                        <SkillsSection skill={"React Js"} progress={"80%"} width={"80%"} />
-                        <SkillsSection skill={"C Language"} progress={"90%"} width={"90%"} />
                         <SkillsSection skill={"C++"} progress={"90%"} width={"90%"} />
-                        <SkillsSection skill={"Web Design"} progress={"25%"} width={"25%"}/>
-                        <SkillsSection skill={"UI/Ux Design"} progress={"75%"} width={"75%"} />
+                        <SkillsSection skill={"Python"} progress={"85%"} width={"85%"} />
+                        <SkillsSection skill={"C"} progress={"80%"} width={"80%"} />
+                        <SkillsSection skill={"Prompt Engineering"} progress={"80%"} width={"80%"} />
+                        <SkillsSection skill={"React.js"} progress={"80%"} width={"80%"} />
+                        <SkillsSection skill={"Node.js"} progress={"80%"} width={"80%"} />
+                        <SkillsSection skill={"JavaScript (ES6+)"} progress={"80%"} width={"80%"} />
+                        <SkillsSection skill={"HTML5"} progress={"85%"} width={"85%"} />
+                        <SkillsSection skill={"CSS3"} progress={"80%"} width={"80%"} />
+                        <SkillsSection skill={"Bootstrap"} progress={"70%"} width={"70%"} />
+                        <SkillsSection skill={"MySQL"} progress={"85%"} width={"85%"} />
+                        <SkillsSection skill={"MongoDB"} progress={"80%"} width={"80%"} />
                     </div>
                 </div>
                 </Fade>

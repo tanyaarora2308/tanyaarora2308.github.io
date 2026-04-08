@@ -4,6 +4,7 @@ import Header from './Header';
 import About from './About';
 import Skills from "./Skills"
 import Projects from './Projects';
+import Work from './Work';
 import Connect from './Connect'
 import Footer from "./Footer"
 
@@ -15,6 +16,7 @@ const HomeSection = () => {
             <Header/>
             <About/>
             <Skills/>
+            <Work/>
             <Projects/>
             <Connect/>
             <Footer/>

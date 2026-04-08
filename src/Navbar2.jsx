@@ -153,8 +153,9 @@ const Navbar=()=>
         <li><span>01.</span><NavLink className="navlink" to="/"   onClick={() => setShowNav(!showNav)} >Home</NavLink></li>
             <li><span>02.</span><NavLink className="navlink" to="/" exact onClick={() => setShowNav(!showNav)}>About</NavLink></li>
             <li><span>03.</span><NavLink className="navlink" to="/" exact onClick={() => setShowNav(!showNav)}>Skills</NavLink></li>
-            <li><span>04.</span><NavLink className="navlink" to="/"  exact onClick={() => setShowNav(!showNav)}>Projects</NavLink></li>
-            <li><span>05.</span><NavLink className="navlink" to="/" exact onClick={() => setShowNav(!showNav)}>Contact</NavLink></li>
+            <li><span>04.</span><NavLink className="navlink" to="/" exact onClick={() => setShowNav(!showNav)}>Work</NavLink></li>
+            <li><span>05.</span><NavLink className="navlink" to="/" exact onClick={() => setShowNav(!showNav)}>Projects</NavLink></li>
+            <li><span>06.</span><NavLink className="navlink" to="/" exact onClick={() => setShowNav(!showNav)}>Contact</NavLink></li>
             <p className="btn"><Button btnText="Resume" btnLink="/" /></p>
         </div>
       </ul>

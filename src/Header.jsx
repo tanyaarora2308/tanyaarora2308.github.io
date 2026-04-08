@@ -21,9 +21,9 @@ const Header = () => {
                             <>
                             <section style={{fontFamily: "'Roboto Mono', monospace", fontSize: "16px",color: "var(--green)", letterSpacing: "0.09vw",marginTop:"100px"}}>Hi, my name is</section>
                             <section className="name">Tanya Arora.</section>
-                            <span className="info1">I build user interfaces.</span><br/><br/>
-                            <div className="info2">I'm a web developer based in Haryana,specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.</div>
-                            <p className="home-btn"><Button btnText="Get In Touch" btnLink="/ContactSection"/></p>
+                            <span className="info1">I build reliable systems at scale.</span><br/><br/>
+                            <div className="info2">I’m a Software Engineer building fast, efficient systems. I like simplifying complexity and making things work seamlessly.</div>
+                            <p className="home-btn"><a href="https://mail.google.com/mail/?view=cm&to=tanya.arora.connect@gmail.com" target="_blank" rel="noopener noreferrer" style={{fontSize: "16px", padding: "0.85rem 3rem", fontFamily: "'Roboto Mono', monospace", color: " var(--green)", textDecoration: "none"}} className="ButtonStyle">Get In Touch</a></p>
                             </>
                     </JackInTheBox>
                     </div>

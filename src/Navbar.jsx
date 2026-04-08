@@ -178,6 +178,7 @@ const Navbar = () => {
                     to="Section_About"
                     smooth={true}
                     duration={80}
+                    offset={-80}
                     exact
                     onClick={() => setShowNav(!showNav)}
                   >
@@ -189,6 +190,9 @@ const Navbar = () => {
                   <Link
                     className="navlink"
                     to="Section_Skills"
+                    smooth={true}
+                    duration={80}
+                    offset={-80}
                     onClick={() => setShowNav(!showNav)}
                   >
                     Skills
@@ -198,9 +202,24 @@ const Navbar = () => {
                   <span>04.</span>
                   <Link
                     className="navlink"
+                    to="Section_Work"
+                    smooth={true}
+                    duration={80}
+                    offset={-80}
+                    exact
+                    onClick={() => setShowNav(!showNav)}
+                  >
+                    Work
+                  </Link>
+                </li>
+                <li>
+                  <span>05.</span>
+                  <Link
+                    className="navlink"
                     to="Section_Projects"
                     smooth={true}
                     duration={80}
+                    offset={-80}
                     exact
                     onClick={() => setShowNav(!showNav)}
                   >
@@ -208,10 +227,13 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <span>05.</span>
+                  <span>06.</span>
                   <Link
                     className="navlink"
                     to="Section_Contact"
+                    smooth={true}
+                    duration={80}
+                    offset={-80}
                     exact
                     onClick={() => setShowNav(!showNav)}
                   >
@@ -219,7 +241,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <p className="btn">
-                  <Button btnText="Resume" btnLink="Section_projects" />
+                  <a href="https://bit.ly/4cdodwK" target="_blank" rel="noopener noreferrer" style={{fontSize: "13px", fontFamily: "'Roboto Mono', monospace", color: " var(--green)", textDecoration: "none"}} className="ButtonStyle">Resume</a>
                 </p>
               </div>
             </Fade>
