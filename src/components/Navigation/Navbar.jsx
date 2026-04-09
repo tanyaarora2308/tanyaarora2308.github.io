@@ -232,6 +232,7 @@ const Navbar = () => {
             <Fade duration="5000">
               <div className="navbar">
                 <li>
+                      <span className="span">01.</span>
                   <Link
                     className="navlink"
                     to="Section_Header"
@@ -241,6 +242,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
+                      <span className="span">02.</span>
                   <Link
                     className="navlink"
                     to="Section_About"
@@ -254,6 +256,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
+                      <span className="span">03.</span>
                   <Link
                     className="navlink"
                     to="Section_Skills"
@@ -266,6 +269,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
+                      <span className="span">04.</span>
                   <Link
                     className="navlink"
                     to="Section_Work"
@@ -279,6 +283,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
+                      <span className="span">05.</span>
                   <Link
                     className="navlink"
                     to="Section_Projects"
@@ -292,6 +297,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
+                      <span className="span">06.</span>
                   <Link
                     className="navlink"
                     to="Section_Contact"

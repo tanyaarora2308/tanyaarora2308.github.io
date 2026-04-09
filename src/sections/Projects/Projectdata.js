@@ -1,6 +1,7 @@
 import LightsOut from '../../Images/lightsoutB.png';
 import Hangman from '../../Images/HangmanB.png';
 import Coachify from '../../Images/coachify.png';
+import restaurantB from '../../Images/restaurantB.png';
 
 const Projectdata = [
   {
@@ -26,6 +27,14 @@ const Projectdata = [
       'A classic Lights Out puzzle with a 5×5 grid, randomized starts, and a satisfying win condition when all lights go off.',
     img: LightsOut,
     codeLink: 'https://github.com/tanyaarora2308/Lights-Out-Game',
+  },
+  {
+    id: '4',
+    Pname: 'Restaurant Website',
+    desc:
+      'A restaurant website built with front-end technologies including HTML, CSS, and JavaScript.',
+    img: restaurantB,
+    codeLink: 'https://github.com/tanyaarora2308/Restaurant-Website',
   },
 ];
 
