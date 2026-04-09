@@ -61,7 +61,7 @@ function Skills() {
                     className="projectContainer"
                     style={{ paddingTop: "1.5rem", marginRight: "80px" }}
                 >
-                    <h2 class="about-me" style={{ marginBottom: "2rem" }}>
+                    <h2 className="about-me" style={{ marginBottom: "2rem" }}>
                         <span style={{ color: "var(--green)" }}>03.</span>
                         <span style={{ paddingRight: "5%" }}>My Skills</span>{" "}
                     </h2>

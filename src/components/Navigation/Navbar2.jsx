@@ -51,7 +51,6 @@ const NavStyles = styled.nav`
       font-family: 'Roboto Mono', monospace;
       padding: 1rem 0.8rem;
       font-size: 13px;
-      // color: var(--gray-1);
       outline: none;
     }
     .active {

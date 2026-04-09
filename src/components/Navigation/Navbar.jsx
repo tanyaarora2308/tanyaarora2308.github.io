@@ -4,7 +4,6 @@ import { MdClose, MdMenu } from "react-icons/md";
 import { FaTenge } from "react-icons/fa";
 import "../../styles/Style.css";
 import { Link } from "react-scroll";
-import Button from "../Button/Button";
 import {Fade} from "react-awesome-reveal";
 
 const NavStyles = styled.nav`
@@ -15,6 +14,9 @@ const NavStyles = styled.nav`
   width: 100%;
   padding: 1rem 0;
   background: var(--main);
+  .overlay {
+    display: none;
+  }
   .NavContainer{
     padding-right:10%;
     display:flex;
@@ -87,30 +89,66 @@ const NavStyles = styled.nav`
   }
   @media only screen and (max-width: 768px) {
     padding: 0;
-    .hide-item {
-      transform: translateY(calc(-100% - var(--top)));
-    }
+
     .logo{	
       margin:7% 10%;	
       
     }	
     .mobile-menu-icon {
       z-index:100;
-      font-size:250%;
-      margin:6% -3%;	
+      font-size: 22px;
+      margin: 4.5% 1%;
       color:var(--green);
       display: block;
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      background: rgba(10, 25, 47, 0.55);
+      border: 1px solid rgba(100, 255, 218, 0.35);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .mobile-menu-icon:hover {
+      transform: translateY(-1px);
+      background: rgba(10, 25, 47, 0.78);
+      border-color: rgba(100, 255, 218, 0.55);
+    }
+
+    .overlay {
+      display: block;
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 12, 27, 0.62);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 180ms ease;
+    }
+
+    .overlay.isOpen {
+      opacity: 1;
+      pointer-events: auto;
     }
     .navItems {
-      --top:35%;
-      transition: 0.3s ease transform;
-      background-color: #112240;
-      width: 50%;
-      max-width: 196px;
-      border-radius: 12px;
-      position: absolute;
-      right: 1rem;
-      top: var(--top);
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: min(68vw, 280px);
+      margin: 0;
+      padding: 1rem 0.75rem 1.25rem;
+      background: #112240;
+      border-left: 1px solid rgba(100, 255, 218, 0.18);
+      box-shadow: -18px 0 42px rgba(0, 0, 0, 0.45);
+      transform: translateX(110%);
+      transition: 220ms ease transform;
+      border-radius: 0;
+      text-align: left;
       .span{
         display:none;
       }
@@ -118,24 +156,50 @@ const NavStyles = styled.nav`
         opacity:0;
       }
       .closeNavIcon {
-        font-size:200%;
-        opacity:0;
+        font-size: 30px;
+        opacity: 1;
         display: block;
-        width: 3rem;
-        margin: 0 0 0 auto;
+        width: 44px;
+        height: 44px;
+        border-radius: 999px;
+        border: 1px solid rgba(100, 255, 218, 0.35);
+        background: rgba(10, 25, 47, 0.55);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 0.75rem auto;
         cursor: pointer;
         * {
           pointer-events: none;
         }
       }
       li {
-        text-align:left;
-        display: block;
-        margin-bottom: 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        margin-bottom: 0.25rem;
       }
       .btn{
         display:none;
       }
+    }
+
+    .navItems.isOpen {
+      transform: translateX(0%);
+    }
+
+    .navlink {
+      flex: 1;
+      display: block;
+      width: 100%;
+      padding: 0.85rem 0.6rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .navlink:hover {
+      background: rgba(100, 255, 218, 0.08);
     }
   }
 `;
@@ -145,6 +209,10 @@ const Navbar = () => {
   return (
     <>
       <NavStyles>
+        <div
+          className={showNav ? "overlay isOpen" : "overlay"}
+          onClick={() => setShowNav(false)}
+        />
         <div className="NavContainer">
           <div className="logo">
             <FaTenge />
@@ -152,17 +220,18 @@ const Navbar = () => {
           <div
             className="mobile-menu-icon"
             onClick={() => setShowNav(!showNav)}
+            role="button"
+            aria-label={showNav ? "Close menu" : "Open menu"}
           >
             <MdMenu />
           </div>
-          <ul className={!showNav ? "navItems hide-item" : "navItems"}>
+          <ul className={showNav ? "navItems isOpen" : "navItems"} aria-hidden={!showNav}>
             <div className="closeNavIcon" onClick={() => setShowNav(!showNav)}>
               <MdClose />
             </div>
             <Fade duration="5000">
               <div className="navbar">
                 <li>
-                  <span>01.</span>
                   <Link
                     className="navlink"
                     to="Section_Header"
@@ -172,7 +241,6 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <span>02.</span>
                   <Link
                     className="navlink"
                     to="Section_About"
@@ -186,7 +254,6 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <span>03.</span>
                   <Link
                     className="navlink"
                     to="Section_Skills"
@@ -199,7 +266,6 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <span>04.</span>
                   <Link
                     className="navlink"
                     to="Section_Work"
@@ -213,7 +279,6 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <span>05.</span>
                   <Link
                     className="navlink"
                     to="Section_Projects"
@@ -227,7 +292,6 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <span>06.</span>
                   <Link
                     className="navlink"
                     to="Section_Contact"
@@ -239,6 +303,17 @@ const Navbar = () => {
                   >
                     Contact
                   </Link>
+                </li>
+                <li>
+                  <a
+                    className="navlink"
+                    href="https://bit.ly/4cdodwK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setShowNav(false)}
+                  >
+                    Resume
+                  </a>
                 </li>
                 <p className="btn">
                   <a href="https://bit.ly/4cdodwK" target="_blank" rel="noopener noreferrer" style={{fontSize: "13px", fontFamily: "'Roboto Mono', monospace", color: " var(--green)", textDecoration: "none"}} className="ButtonStyle">Resume</a>
