@@ -2,6 +2,7 @@ import LightsOut from '../../Images/lightsoutB.png';
 import Hangman from '../../Images/HangmanB.png';
 import Coachify from '../../Images/coachify.png';
 import restaurantB from '../../Images/restaurantB.png';
+import blockchainImg from '../../Images/blockchain.png';
 
 const Projectdata = [
   {
@@ -22,6 +23,14 @@ const Projectdata = [
   },
   {
     id: '3',
+    Pname: 'Blockchain X',
+    desc:
+      'A blockchain prototype built for HackCelestia using a smart-contract backend and a separate client dApp.',
+    img: blockchainImg,
+    codeLink: 'https://github.com/tanyaarora2308/Blockchain-HackCelestia/tree/master',
+  },
+  {
+    id: '4',
     Pname: 'Lights Out Puzzle',
     desc:
       'A classic Lights Out puzzle with a 5×5 grid, randomized starts, and a satisfying win condition when all lights go off.',
@@ -29,7 +38,7 @@ const Projectdata = [
     codeLink: 'https://github.com/tanyaarora2308/Lights-Out-Game',
   },
   {
-    id: '4',
+    id: '5',
     Pname: 'Restaurant Website',
     desc:
       'A restaurant website built with front-end technologies including HTML, CSS, and JavaScript.',
